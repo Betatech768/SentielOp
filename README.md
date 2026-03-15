@@ -251,6 +251,25 @@ This gives clinicians a **complete view of the patient’s recovery progress**.
 
 ---
 
+
+# Setup & Installation
+## Backend Setup
+```bash
+cd backend
+python -m venv venv && venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env  # fill in AWS credentials + DB details
+uvicorn main:app --reload --port 8000
+```
+
+## Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+
 # Future Enhancements
 
 SentinelOp can be extended with additional capabilities such as:
